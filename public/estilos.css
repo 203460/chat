@@ -1,0 +1,280 @@
+
+h1 {
+    text-align: center;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #EEEEEE;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.login {
+    background-color: #EEEEEE;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50rem;
+    height: 20rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #ccc;
+}
+
+
+.login-header {
+    background-color: #3A98B9;
+    padding: .5rem;
+    margin-bottom: 1rem;
+    color: #ffffff;
+}
+
+.usuario-input {
+    padding: 1rem;
+    border-radius: .5rem;
+    border: 1px solid #ccc;
+    width: 30rem;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+
+.entrar {
+    width: 10rem;
+    padding: 1rem;
+    border-radius: .5rem;
+    border: 1px solid #ccc;
+    background-color: #3A98B9;
+    color: #ffffff;
+}
+
+.chat-container {
+    width: 50rem;
+    height: 60rem;
+    background-color: #ffffff;
+    width: 10;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.chat-container-none {
+    display: none;
+}  
+
+.container-users-none {
+    display: none;
+}
+.header-chat {
+    background-color: #3A98B9;
+    width: 50rem;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.usuario {
+    margin: 0;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1.6rem;
+    margin-left: 1rem;
+    
+}
+
+.chat {
+    width: 100%;
+    height: calc(100% - 12rem);
+    padding: 2rem;
+    overflow: auto;
+    scrollbar-width: thin;
+}
+
+::-webkit-scrollbar {
+    width: .5rem;
+    background-color: var(--gray);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: black;
+    border-radius: 10px;
+}
+
+.mensaje-salida {
+    background-color: #ccc;
+    font-size: 1.2rem;
+    min-width: 3rem;
+    padding: 1rem 2rem;
+}
+
+.div-file {
+    background-color: var(--gray);
+    border-radius: 3rem;
+    font-size: 1.2rem;
+    min-width: 3rem;
+    padding: 1rem 2rem;
+    margin: 1.2rem 0;
+}
+
+.div-file:first-of-type {
+    margin-top: 0;
+}
+
+.salida p:first-of-type {
+    margin-top: 0;
+}
+
+.footer-chat {
+    width: 50rem;
+    position: absolute;
+    bottom: 0;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3A98B9;
+}
+
+.mensaje {
+    width: 70%;
+    height: 4rem;
+    background-color: #ffffff;
+    border: none;
+    padding: 0 2rem;
+}
+
+.boton {
+    border: none;
+    width: 4rem;
+    height: 4rem;
+    position: relative;
+    background-color: #ffffff;
+}
+
+svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #353535;
+}
+
+.alertas p {
+    background-color: var(--gray);
+    border-radius: 3rem;
+    font-size: 1.2rem;
+    min-width: 3rem;
+    padding: 1rem 2rem;
+}
+
+.alertas p:first-of-type {
+    margin: 0;
+}
+
+.alerta-usuario p {
+    color: var(--backgroundColor);
+}
+
+
+.input-archivo {
+    width: 2rem;
+}
+
+.container-users {
+    background-color: #ffffff;
+    width: 20rem;
+    height: 30rem;
+}
+
+.salida li {
+    list-style: none;
+}
+
+.usuario-file {
+    display: inline;
+}
+
+.div-file a {
+    color: var(--backgroundColor);
+    width: 700;
+    text-decoration: none;
+}
+
+.container-chat-users {
+    display: flex;
+    gap: 5rem;
+}
+
+.header-users p {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.header-users {
+    text-align: center;
+    color: #ffffff;
+    display: flex;
+    height: 6rem;
+    align-items: center;
+    justify-content: center;
+    background-color: #3A98B9;
+}
+
+.content-users {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.mensaje-privado {
+    background-color: #b7dcff;
+    padding: 10px;
+}
+
+.form-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+}
+
+.input-file {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    cursor: pointer;
+    width: 4rem;
+    height: 4rem;
+
+}
+
+.file-label {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 4rem;
+    height: 4rem;
+    padding: 8px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 4px;
+    overflow: hidden;
+    cursor: pointer;
+}
+

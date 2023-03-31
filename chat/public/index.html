@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=p, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./estilos.css">
+    <title>Welcome to my chat</title>
+</head>
+
+<body>
+
+    <div class="login-container">
+        <div class="login">
+            <div class="login-header">
+                <h1>Registrate</h1>
+            </div>
+            <div>
+                <input type="text" class="usuario-input" placeholder="Usuario">
+            </div>
+            <div>
+                <button class="entrar" type="submit">Aceptar</button>
+            </div>
+            <div class="alerta-usuario">
+            </div>
+        </div>
+    </div>
+
+    <div class="container-chat-users">
+
+        <div class="chat-container chat-container-none">
+            <div class="header-chat">
+                <p class="usuario">Usuario</p>
+            </div>
+            <div class="chat">
+                <div class="salida"></div>
+                <div class="alertas"></div>
+            </div>
+            <div class="footer-chat">
+                <form class="form-input">
+                    <input class="mensaje" type="text" id="mensaje" placeholder="Escribe...">
+                    <label for="" class="file-label">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-file-filled"
+                            width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                            fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path
+                                d="M12 2l.117 .007a1 1 0 0 1 .876 .876l.007 .117v4l.005 .15a2 2 0 0 0 1.838 1.844l.157 .006h4l.117 .007a1 1 0 0 1 .876 .876l.007 .117v9a3 3 0 0 1 -2.824 2.995l-.176 .005h-10a3 3 0 0 1 -2.995 -2.824l-.005 -.176v-14a3 3 0 0 1 2.824 -2.995l.176 -.005h5z"
+                                stroke-width="0" fill="currentColor"></path>
+                            <path d="M19 7h-4l-.001 -4.001z" stroke-width="0" fill="currentColor"></path>
+                        </svg>
+                        <input type="file" class="input-file">
+                    </label>
+                    <button class="boton" id="enviar" type="submit">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-big-right"
+                            width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                            fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path
+                                d="M4 9h8v-3.586a1 1 0 0 1 1.707 -.707l6.586 6.586a1 1 0 0 1 0 1.414l-6.586 6.586a1 1 0 0 1 -1.707 -.707v-3.586h-8a1 1 0 0 1 -1 -1v-4a1 1 0 0 1 1 -1z">
+                            </path>
+                        </svg>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <div class="container-users container-users-none">
+            <div class="header-users">
+                <p>Clientes</p>
+            </div>
+            <div class="content-users"></div>
+        </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="cliente.js"></script>
+
+</body>
+
+</html>
